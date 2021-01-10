@@ -1,0 +1,678 @@
+/*-----------------------------------------------------------------------------------
+
+Theme Name:Emily
+Description: Creative One Page Portfolio
+Author: themexposer
+Author URI:https://themeforest.net/user/themexposer
+Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+
+	== Table Of Content
+
+		01 - Global
+		02 - Navigition
+		03 - Header
+		04 - Hero
+		05 - Services
+		06 - Portfolio
+		07 - CounterUp
+		08 - Testimonial
+		09 - Blog
+		10 - Contact
+		
+---------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                    Global
+-------------------------------------------------------- */
+html{
+	font-family: 'Roboto', ;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none !important;
+	list-style: none !important;
+	outline: none !important;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+span {
+	display: inline-block;
+}
+a,
+a:hover,
+a:focus {
+	color: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+.section-padding{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+/* ----- Clear-fix & Buttons ----*/
+
+.clear-fix {
+	clear: both !important;
+}
+
+/* -------------------------------------------------------
+                    Global
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                     Navigition css start
+-------------------------------------------------------- */
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	padding: 0;
+	z-index: 999;
+}
+.navbar .logo .navbar-brand {
+	letter-spacing: 4px;
+	font-size: 25px;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding-top: 15px;
+	float: left;
+	text-decoration: none;
+}
+.navbar .navbar-toggler {
+	border: none;
+}
+.navbar #custom_nav ul li {
+	font-size: 14px;
+	margin: 25px 20px 0;
+	background: none;
+	cursor: pointer;
+}
+.navbar #custom_nav ul li a {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight:100;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.navbar #custom_nav ul li a:hover {
+  color:#f3a032;
+}
+.newnavigation {
+	-webkit-box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+	background:rgba(0,0,0,.8);
+	min-height: 60px;
+	line-height: 60px;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.newnavigation .logo .navbar-brand {
+	padding-top: 5px;
+}
+.newnavigation .navbar-toggler {
+	border: none;
+}
+.newnavigation #custom_nav ul li {
+	margin: 10px 20px 10px;
+	font-size: 14px;
+	background: none;
+	cursor: pointer;
+}
+.newnavigation #custom_nav ul li a {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+/* -------------------------------------------------------
+                     Navigition css End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                     Header css start
+-------------------------------------------------------- */
+
+#banner {
+	background: url(../images/Home.png) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	position: relative;
+	z-index:-1;
+}
+#banner .v-middle {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#banner .intro-text {
+	text-transform: capitalize;
+}
+#banner .intro-text h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 60px;
+}
+#banner .intro-text button{
+	text-transform:uppercase;
+	background-image: linear-gradient(to right, #de4326, #e55d24, #eb7525, #f08b29, #f4a132);
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	margin-top:25px;
+	width:210px;
+	height:50px;
+	line-height:40px;
+	border-radius:25px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+#banner .intro-text button:hover{
+  background-image: linear-gradient(to right, #f4a132, #f08b29, #eb7525, #e55d24, #de4326);
+}
+/* -------------------------------------------------------
+                     Header css end
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                     Add Banner Part CSS Start
+-------------------------------------------------------- */
+#add-banner{
+	z-index:99;
+}
+.add-banner-area{
+	margin-top:-100px;
+}
+.add-banner-single{
+	float:left;
+	width:350px;
+	background:#fff;
+	padding-top:45px;
+	padding-bottom:45px;
+    -webkit-box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.single-add-area{
+	padding-left:40px;
+	padding-right:40px;
+}
+.add-banner-middle{
+	margin-left:30px;
+	margin-right:30px;
+}
+.add-banner-single h5{
+	font-size:30px;
+	font-weight:bold;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.add-banner-single p{
+	font-size:14px;
+	margin-top:25px;
+	color:#000;
+	margin-bottom:25px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.add-banner-single button{
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:bold;
+	width:120px;
+	height:45px;
+	border-radius:25px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.add-banner-single .adbtn1{
+    background:#f3a032;
+    color:#fff;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.add-banner-single .adbtn2{
+    background:none;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.add-banner-single:hover{
+	background:#f3a032;
+}
+.add-banner-single:hover .adbtn1{
+	background:#fff;
+	color:#000;
+}
+.add-banner-single:hover .adbtn2{
+	color:#fff;
+}
+.add-banner-single:hover h5
+{
+	color:#fff;
+}
+.add-banner-single:hover p{
+	color:#fff;
+}
+/* -------------------------------------------------------
+                      Add Banner Part CSS end
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------
+                      Why we Part CSS Start
+-------------------------------------------------------- */
+#why-we{}
+.section-title{}
+.why-we-title{
+	margin-top:100px;
+}
+.section-title h3{
+	color:#282828;
+	font-size:48px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.section-title p{
+	color:#767676;
+	font-size:18px;
+	line-height:24px;
+}
+.whwe-area{
+	text-align:left;
+	margin-top:80px;
+}
+.whwe-single{}
+.whwe-single img{
+	width:32px;
+	height:32px;
+}
+.whwe-single p{
+	font-size:18px;
+	color:#767676;
+	padding-top:20px;
+}
+
+/* -------------------------------------------------------
+                      Why we  Part CSS End
+-------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------
+                      How We work Part CSS Start
+-------------------------------------------------------- */
+#how-we-work{
+	background:#f6f6f6;
+}
+.hwewo-area{
+	margin-top:117px;
+}
+.hwewo-single{
+	background:#fff;
+	text-align:center;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.hwewo-single:hover{
+	background:#f3a032;
+	color:#fff;
+}
+.hwewo-single h3{
+	font-size:36px;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-top:70px;
+	padding-bottom:70px;
+}
+
+
+/* -------------------------------------------------------
+                      How We work Part CSS End
+-------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------
+                      How We work Part CSS End
+-------------------------------------------------------- */
+#advertise{}
+.advertise-left{
+	padding-top:170px;
+}
+.advertise-left h3{
+	font-size:48px;
+	color:#282828;
+	font-weight:bold;
+}
+.advertise-left p{
+	font-size:18px;
+	color:#767676;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.advertise-left a{
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#767676;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.app-download{
+	margin-top:45px;
+}
+.app-download img{
+	width:200px;
+}
+.advertise-left a:hover{
+	color:#f3a032;
+}
+.advertise-right{}
+.advertise-right img{}
+/* -------------------------------------------------------
+                      How We work Part CSS End
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------
+                     Agencies Part CSS Start
+-------------------------------------------------------- */
+#agencies{
+	background:#f6f6f6;
+}
+.agencie-text{
+	margin-top:90px;
+}
+.agencie-text i{
+	float:left;
+	color:#f3a032;
+	font-size:30px;
+}
+.agencie-text p{
+	padding-right:20px;
+	font-size:18px;
+	color:#767676;
+}
+/* -------------------------------------------------------
+                    Agencies Part CSS End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                    Publisher Part CSS Start
+-------------------------------------------------------- */
+#publisher{
+	background: url(../images/publisher-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position:relative;
+	z-index:99;
+}
+#publisher:after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+.publisher-title{
+	color:#fff;
+}
+.publisher-title h3{
+	font-size:48px;
+	font-weight:bold;
+}
+.publisher-title p{
+	font-size:18px;
+	padding-top:30px;
+}
+.pub-pb{
+	margin-top:120px;
+}
+.pub-pb i{
+	font-size:50px;
+	color:#fff;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.pub-pb i:hover{
+	color:#f3a032;
+}
+/* -------------------------------------------------------
+                    Publisher Part CSS End
+-------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------
+                    About-us Part CSS Start
+-------------------------------------------------------- */
+#about-us{}
+.about-us-area{
+	margin-top:80px;
+}
+.single-about-us{
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+.single-about-us:hover{
+	border-bottom: 2px solid #f3a032;
+}
+.single-about-us img{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.single-about-us h5{
+	font-size:18px;
+	color:#282828;
+}
+/* -------------------------------------------------------
+                   About-us   Part CSS End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                     Google map Part CSS Start
+-------------------------------------------------------- */
+#google-map{
+	position:relative;
+}
+.contact-area{
+	background:#fff;
+	padding-top:60px;
+	padding-bottom:60px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.contact-area p{
+	font-size:18px;
+	color:#;
+}
+.contact-area h3{
+	font-size:36px;
+	color:#282828;
+	font-weght:bold;
+}
+.single-contact{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.map_part{
+	width: 100%;
+	min-height: 700px;
+	border:0;
+	display: block;
+}
+/* -------------------------------------------------------
+                     Google map Part CSS End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                     footer css start
+-------------------------------------------------------- */
+
+footer {
+	padding: 50px 0;
+	text-align: center;
+}
+footer .footer-content .footer-icon a i {
+	font-size: 12px;
+}
+footer .footer-content p {
+	font-size: 12px;
+}
+
+/* -------------------------------------------------------
+                     footer css End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                   scroll top button css Start
+-------------------------------------------------------- */
+
+.scroll-top {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 999;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+/* -------------------------------------------------------
+                     scroll top button css End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                     RESPONSIVE CSS START
+-------------------------------------------------------- */
+
+@media(min-width:992px) and (max-width:1200px){
+	.add-banner-single{
+		text-align:center;
+		width:350px;
+		background:#fff;
+		padding-top:45px;
+		padding-bottom:45px;
+		-webkit-box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+		box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+		transition: all linear 0.3s;
+		-webkit-transition: all linear 0.3s;
+		-moz-transition: all linear 0.3s;
+		-ms-transition: all linear 0.3s;
+		-o-transition: all linear 0.3s;
+	}
+	.single-add-area{
+		padding-left:40px;
+		padding-right:40px;
+	}
+	.add-banner-middle{
+		margin-left:30px;
+		margin-right:30px;
+	}
+}
+@media screen and (max-width: 991.99px) {
+   .add-banner-area{
+	margin-top:100px;
+	}
+		.add-banner-single{
+		text-align:center;
+		width:350px;
+		background:#fff;
+		padding-top:45px;
+		padding-bottom:45px;
+		-webkit-box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+		box-shadow: 0px 11px 35px -8px rgba(0,0,0,0.75);
+		transition: all linear 0.3s;
+		-webkit-transition: all linear 0.3s;
+		-moz-transition: all linear 0.3s;
+		-ms-transition: all linear 0.3s;
+		-o-transition: all linear 0.3s;
+	}
+	.hwewo-single{
+		margin-top:20px;
+	}
+}
+/* -------------------------------------------------------
+                     RESPONSIVE CSS END
+-------------------------------------------------------- */
